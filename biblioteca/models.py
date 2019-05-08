@@ -1,11 +1,12 @@
 from django.db import models
+from biblioteca.choices import CHOICES_GENERO
 
 class Livro(models.Model):
-    titulo = models.CharField(max_length=200)
+    titulo = models.CharField()
     lancamento = models.DateField()
     descricao = models.TextField()
-    autor = models.CharField(max_length=256, default='')
-    genero = models.CharField(max_length=256, default='')
+    autor = models.Charfield(max_length=256, default='')
+    genero = models.charField(max_length=256, choices=CHOICES_GENERO ,default='')
 
     def __str__(self):
         return self.titulo

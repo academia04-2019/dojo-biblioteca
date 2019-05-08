@@ -22,6 +22,7 @@ nav {
     background-color: #2d2d2d;
     box-sizing: border-box;
     display: flex;
+    display: none;
     left: 0;
     justify-content: flex-start;
     padding: 20px;

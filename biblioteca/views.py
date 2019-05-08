@@ -4,7 +4,7 @@ from biblioteca.models import Livro
 
 
 # Create your views here.
-def render_index(request):
+def render_index():
     # Listar livros para utilizar no index
     # BÔNUS: Listar eles por ordem de data de publicação
     #
@@ -24,4 +24,4 @@ def render_cadastrar_livros(request):
             livro.save()
             return render(request, 'sucesso.html')
 
-    return render(request, 'cadastro_livros.html', {'form': LivroForm})
+    return render(request, 'cadastro_livros.html')

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from biblioteca.models import Editora, Livro
+
 
 @admin.register(Livro)
 class LivroAdmin(admin.ModelAdmin):
